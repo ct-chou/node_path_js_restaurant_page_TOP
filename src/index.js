@@ -1,21 +1,6 @@
-// const body = document.querySelector('body');
-const header = document.createElement('header');
-
+import { header } from './header.js';
+import { home } from './home.js';
 document.body.appendChild(header);
-const content = document.createElement('div');
-content.id = 'content';
-header.append(content);
+header.insertAdjacentElement('afterend', home);
 
-const nav = document.createElement('nav');
-const home_btn = document.createElement('button');
-home_btn.textContent = 'Home';
-nav.appendChild(home_btn);
-const menu_btn = document.createElement('button');
-menu_btn.textContent = 'Menu';
-nav.appendChild(menu_btn);
-const about_btn = document.createElement('button');
-about_btn.textContent = 'About';
-nav.appendChild(about_btn);
-header.appendChild(nav);
-
-alert('Welcome!');
+console.log('Welcome!');
