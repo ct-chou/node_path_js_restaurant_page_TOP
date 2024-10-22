@@ -4,7 +4,7 @@ const header = document.createElement('header');
 document.body.appendChild(header);
 const content = document.createElement('div');
 content.id = 'content';
-header.appendChild(content);
+header.append(content);
 
 const nav = document.createElement('nav');
 const home_btn = document.createElement('button');
@@ -16,6 +16,6 @@ nav.appendChild(menu_btn);
 const about_btn = document.createElement('button');
 about_btn.textContent = 'About';
 nav.appendChild(about_btn);
-content.appendChild(nav);
+header.appendChild(nav);
 
 alert('Welcome!');
